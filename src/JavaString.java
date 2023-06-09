@@ -26,7 +26,7 @@ public class JavaString {
         System.out.println("Перша літера " + Test.substring(0,1));
 
 
-        System.out.println("Друга літера " + Test.substring(11,12));
+        System.out.println("Остання літера " + Test.substring(11,12));
 
 
     }
