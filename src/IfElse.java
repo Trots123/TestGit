@@ -30,7 +30,7 @@ public class IfElse {
             System.out.println("B больше A");
         }
 
-        System.out.println("Третие задание");
+        System.out.println("Третье задание");
 
         if (a % 2==1){
             System.out.println("не парное");
