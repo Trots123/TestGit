@@ -19,9 +19,14 @@ public class cycle {
             if (a % 2 == 0)
                 System.out.println(a);
 
+        System.out.println("3: завдання");
+        int f1=1;
 
+        for (int f2 =1 ; f2<=7; f2++){
+            System.out.println(f1*=f2);
 
-            System.out.println("4: завдання ");
+        }
+        System.out.println("4: завдання ");
           int n1=0;
           int n2=1;
           int n3=0;
