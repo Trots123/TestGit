@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.util.Arrays;
-public class Test1 {
+public class arrays {
     public static void main(String[] args) {
 
        /*   1:Створити програму в якій потрібно створити масив з 10 елементів та заповнити його випадковими числами
@@ -20,7 +20,7 @@ public class Test1 {
                 test1[i][j] = random.nextInt(10);
             }
         }
-        System.out.println(Arrays.deepToString(test1));
+        System.out.println(java.util.Arrays.deepToString(test1));
 
         System.out.println("3 Завдання");
 
