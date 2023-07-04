@@ -61,7 +61,7 @@ public class arrays {
 
 
             System.out.println("6 Завдання");
-            if (test1.length > 0) {
+            //if (test1.length > 0) {
                 double sum1 = 0;
                 for (int i = 0; i < test1.length; i++) {
                     for (int j = 0; j < test1[i].length; j++) {
@@ -73,7 +73,7 @@ public class arrays {
             }
 
 
-        }
+
     }
 }
 
