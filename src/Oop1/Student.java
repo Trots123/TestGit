@@ -1,5 +1,5 @@
 package Oop1;
-
+/*
 
 public class Student {
 
@@ -14,4 +14,6 @@ public class Student {
 
     }
 }
+
+ */
 

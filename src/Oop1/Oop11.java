@@ -1,6 +1,6 @@
 package Oop1;
 import java.util.Objects;
-public class Oop11 {
+/*public class Oop11 {
 
     public class Student{
 
@@ -17,3 +17,5 @@ public class Oop11 {
         this.surname=surname ;
     }
 }
+
+ */
