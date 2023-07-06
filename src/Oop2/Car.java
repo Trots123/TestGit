@@ -5,7 +5,7 @@ package Oop2;
 2. У кожному класі повинен бути перевизначений метод, який повертає тип автомобіля
  */
 public class Car {
-    public void Description() {
-        System.out.println("Автомобіль - це транспортний засіб для перевезення пасажирів та вантажів");
+    public void Carr() {
+        System.out.println("Автомобіль - це транспортний засіб ");
     }
 }
