@@ -1,15 +1,15 @@
 package Oop2;
 
-/*public class Truck extends Car{
+public class Truck extends Car{
     @Override
-    public void Carrr() {
-        System.out.println("Вантажний автомобіль - це" +" для перевезення вантажів");
+    public void ride () {
+        System.out.println("Вантажний автомобіль для перевезення вантажів");
 
 
 
     }
 }
 
- */
+
 
 

@@ -6,20 +6,16 @@ package Oop2;
 
  */
 
-/*public class Car {
+public class Car {
 
-
-    public static void main(String[] args) {
-
-
-
-
-        System.out.println(Carr + " Tранспортний засіб ");
-
+    public void ride() {
 
     }
+
+
 }
 
- */
+
+
 
 
