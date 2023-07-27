@@ -1,24 +1,25 @@
 package Generics;
 
-public class Pair <A,B>{
+public class Pair <K,V> {
 
+    private K First;
 
-    private A first;
-    private B second;
+    private V Second;
 
-    public A getFirst() {
-        return first;
+    public V getSecond() {
+        return Second;
     }
 
-    public void setFirst(A first) {
-        this.first = first;
+    public void setSecond(V second) {
+        Second = second;
+
     }
 
-    public B getSecond() {
-        return second;
+    public K getFirst() {
+        return First;
     }
 
-    public void setSecond(B second) {
-        this.second = second;
+    public void setFirst(K first) {
+        First = first;
     }
 }
