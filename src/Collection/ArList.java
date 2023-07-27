@@ -4,24 +4,32 @@ import java.util.Arrays;
 
 public class ArList<T> {
 
+/*
+1. Створити програму для збереження списку чисел з 10 елементів та іншого з 2 000 000 елементів. Для кожного підібрати свій тип
 
+2. Зберегти у колекції список студентів (класс Студент теж створити)
+
+3. Вивести цей список
+
+4. Опціонально: написати реалізацію класу ArrayList або LinkedList
+ */
     public static void main(String[] args){
-
+        System.out.println("1 Пункт");
         ArrayList<Integer> stud1 = new ArrayList<>();
 
-        for (int i=0; i<=10; i++) {
+        for (int i=1; i<10; i++) {
             stud1.add(i);
         }
         System.out.println(stud1);
 
-
-        ArrayList<Integer> stud2 = new ArrayList<>(2000000);
-        for (int a=0; a<=2000000; a++){
+        System.out.println("2 Пункт");
+        ArrayList<Integer> stud2 = new ArrayList<>();
+        for (int a=1; a<2000000; a++){
             stud2.add(a);
         }
         System.out.println(stud2);
 
-
+        System.out.println("3 Пункт");
         ArrayList<Student> stud3 = new ArrayList<>();
 
         Student student1 = new Student("Nikita");
