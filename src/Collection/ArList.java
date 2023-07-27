@@ -14,7 +14,7 @@ public class ArList<T> {
 4. Опціонально: написати реалізацію класу ArrayList або LinkedList
  */
     public static void main(String[] args){
-        System.out.println("1 Пункт");
+        System.out.println("1.1 Пункт");
         ArrayList<Integer> stud1 = new ArrayList<>();
 
         for (int i=1; i<10; i++) {
@@ -22,14 +22,14 @@ public class ArList<T> {
         }
         System.out.println(stud1);
 
-        System.out.println("2 Пункт");
+        System.out.println("1.2 Пункт");
         ArrayList<Integer> stud2 = new ArrayList<>();
         for (int a=1; a<2000000; a++){
             stud2.add(a);
         }
         System.out.println(stud2);
 
-        System.out.println("3 Пункт");
+        System.out.println("2 Пункт");
         ArrayList<Student> stud3 = new ArrayList<>();
 
         Student student1 = new Student("Nikita");
