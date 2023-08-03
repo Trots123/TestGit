@@ -1,6 +1,5 @@
-package Collection;
+package Collection1;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class ArList<T> {
 

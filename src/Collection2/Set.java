@@ -1,4 +1,4 @@
-package Collection1;
+package Collection2;
 import java.util.*;
 public class Set {
 //1. У циклі на 1000 повтореннь сгенерувати випадкові числі діапазоном від 1 до 50 за зберегти їх у різні типи колекцій сет
