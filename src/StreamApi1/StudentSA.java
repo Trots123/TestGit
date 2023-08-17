@@ -1,17 +1,21 @@
 package StreamApi1;
+import java.util.Objects;
 
-public class Student {
+public class StudentSA {
 
 
-    private String name ;
+    private String name;
 
-    private int ball ;
+    private int ball;
 
-    public Student(String name, int ball ) {
-        this.ball=ball;
-        this.name=name ;
+    public StudentSA(String name, int ball) {
+        this.ball = ball;
+        this.name = name;
 
     }
+
+
+
 
     public int getBall() {
         return ball;
@@ -28,6 +32,4 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
-
-
 }
