@@ -28,6 +28,7 @@ public class Main {
                 } catch (NoSuchElementException e) {
                     System.out.println("Ви ввели Букву");
                     entering.nextLine();
+                    ///
                 }
             }
             entering.close();
