@@ -1,11 +1,12 @@
 package Dz24;
 
-
+import java.util.NoSuchElementException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
 public class Main {
+    public static void main(String[] args) {
 
     /*
     1.
@@ -13,52 +14,54 @@ public class Main {
     - При вводі замість числа  букв - показувати повідомлення про помилку на консоль.
     - За допомогою нескінченного циклу - запитувати число з консолі - поки не отримаємо його без помилок
     */
-   public static void firstTask() {
-        Scanner scanner = new Scanner(System.in);
-        try {
-            System.out.println("Введіть число: ");
-            int input = scanner.nextInt();
-            System.out.println(input);
-        } catch (InputMismatchException e) {
-            System.out.println("Ви ввели не Integer, спробуйте ще раз");
-            firstTask();
-        } finally {
-            scanner.close();
-            System.out.println(scanner.hashCode());
+
+       // public static void enterNumber () {
+
+            Scanner entering = new Scanner(System.in);
+
+            while (true) {
+                try {
+                    System.out.println("Введіть числове значення");
+                    int enter = entering.nextInt();
+                    System.out.println("Введене значення: " + enter);
+                    break;
+                } catch (NoSuchElementException e) {
+                    System.out.println("Ви ввели Букву");
+                    entering.nextLine();
+                }
+            }
+            entering.close();
         }
-    }
-}
+
+
+
     /*
     2.
     Створити виняток який викидається коли число менше нуля. Створити функцію, яка приймає число і повертає його квадрат.
  Якщо число буде менше нуля - то викинути створений вийняток
  */
+    public static int pow() {
 
-       /* public static int secondTask(Integer value) {
+        Scanner powering = new Scanner(System.in);
+
+        while (true) {
             try {
-                if (value >= 0) {
-                    return value * value;
-                } else {
-                    throw new EugenesException("Ви ввели відʼємне число", 400);
+                System.out.println("Введіть число для зведення у другу ступінь");
+                int num = powering.nextInt();
+                if (num <= 0) {
+                    throw new PowException("Введіть число більше за нуль");
                 }
-            } catch (EugenesException e) {
-                System.out.println("Message: " + e.getMessage() + "\n" + "Error: " + e.getErrorCode());
-            } catch (Exception e) {
-                throw new RuntimeException(e);
+                System.out.println(num + " зведене у ступінь 2 дорівнює: ");
+                return num * num;
+            } catch (PowException e) {
+                System.out.println(e.getMessage());
+                powering.nextLine();
+            } catch (InputMismatchException e) {
+                System.out.println("Ви ввели не число, повторіть спробу, будь-ласка");
+                powering.nextLine();
             }
-            return 0;
-        }
-
-
-        public static void main(String[] args) {
-            firstTask();
-
-            System.out.println("------------------------------");
-
-            System.out.println("Result: " + secondTask(-2));
-
         }
     }
 }
 
-        */
+
