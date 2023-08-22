@@ -3,8 +3,7 @@ package Dz24;
 import java.util.NoSuchElementException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+//
 
 public class Main {
     public static void main(String[] args) {
