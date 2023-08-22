@@ -46,6 +46,7 @@ public class Main {
         Scanner powering = new Scanner(System.in);
 
         while (true) {
+            //
             try {
                 System.out.println("Введіть число для зведення у другу ступінь");
                 int num = powering.nextInt();
@@ -61,6 +62,7 @@ public class Main {
                 System.out.println("Ви ввели не число, повторіть спробу, будь-ласка");
                 powering.nextLine();
             }
+            System.out.println("dz");
         }
     }
 }
