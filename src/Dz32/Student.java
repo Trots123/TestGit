@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class StudentDAO {
+public class Student {
 
         private String jdbcURL = "jdbc:mysql://localhost:3306/university_db";
         private String jdbcUsername = "ваш_користувач";
@@ -15,7 +15,7 @@ public class StudentDAO {
         private static final String INSERT_STUDENT_SQL = "INSERT INTO students (first_name, last_name, age) VALUES (?, ?, ?)";
         private static final String SELECT_STUDENT_SQL = "SELECT * FROM students WHERE id = ?";
 
-        public StudentDAO() {}
+        public Student() {}
 
         protected Connection getConnection() {
             Connection connection = null;
