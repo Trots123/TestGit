@@ -23,9 +23,9 @@ public class Student {
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
             } catch (SQLException e) {
-                // Обробка помилок
+
             } catch (ClassNotFoundException e) {
-                // Обробка помилок
+
             }
             return connection;
         }
@@ -38,7 +38,7 @@ public class Student {
                 preparedStatement.setInt(3, student.getAge());
                 preparedStatement.executeUpdate();
             } catch (SQLException e) {
-                // Обробка помилок
+
             }
         }
 
@@ -55,7 +55,7 @@ public class Student {
                     student = new Student(firstName, lastName, age);
                 }
             } catch (SQLException e) {
-                // Обробка помилок
+
             }
             return student;
         }
