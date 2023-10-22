@@ -1,19 +1,36 @@
 public class Method {
-    /*
-    1.Створити метод який повертає куб заданого числа
+    public static void main(String[] args) {
+        cube(3);
+        cube(3, 3);
+        multiplySymbol(5);
+        multiplySymbol(10, "&");
 
-    2.Метод повинен вивести зірочку стільки разів, скільки передав користувач у метод
-
-    3.Метод повинен вивести переданий символ стільки разів, скільки передав користувач у метод
-     */
-
-
-
-    static int cube(int a){
-        return a*a*a;
     }
 
-    public static void main(String[] args){
-        System.out.println( cube(2) );
+    public static void cube(int value) {
+        int result = 1;
+        for (int i = 1; i <= 3; i++) {
+            result = result * value;
+        }
+        System.out.println(result);
+    }
+
+    public static void cube(double value, double power) {
+        double result = Math.pow(value,power);
+        System.out.println(result);
+    }
+
+    public static void multiplySymbol(int iterations) {
+        for (int i=0; i!=iterations; i++) {
+            System.out.print("*");
+        }
+        System.out.println("\n");
+    }
+
+    public static void multiplySymbol(int iterations, String symbol) {
+        for (int i=0; i!=iterations; i++) {
+            System.out.print(symbol);
+        }
+        System.out.println("\n");
     }
 }

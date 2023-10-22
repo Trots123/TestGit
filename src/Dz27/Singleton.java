@@ -1,5 +1,5 @@
 package Dz27;
-
+/*
 public class Singleton {
     private static Singleton _instance=null;
     private int a;
@@ -30,7 +30,11 @@ public class Singleton {
     public void Print() {
         System.out.println("A.a = " + a);
     }
+
+
 }
+
+ */
 
 
 

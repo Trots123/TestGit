@@ -1,5 +1,5 @@
 package Dz27;
-
+/*
 public class TestSingleton {
     public static void main(String[] args) {
 
@@ -21,3 +21,6 @@ public class TestSingleton {
             System.out.println("obj2==null");
     }
 }
+
+
+ */
